@@ -1,1 +1,1 @@
-# gdsc_2024
+# VigoraConnect: for every her

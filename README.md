@@ -1,6 +1,5 @@
-# first_app
-
-A new Flutter project.
+# Vigora Connect - for every her
+A flutter based app for girls and women , serving as a one stop solution to their health related queries .
 
 ## Getting Started
 

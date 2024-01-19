@@ -42,12 +42,11 @@ Vigora Connect relies on specific dependencies and frameworks. Find a list of th
 
 
 ![Splash Screen](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/SPLASH_screen.png)
-![Sign in](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/sign_in_page.jpg)
-![google sign in](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/google_authentication_sign_in.jpg)
-![period tracker screen](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/period_tracker_page.jpeg)
-![calendar](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/calendar_for_period_log.jpeg)
-![results](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/next_period_results.jpeg)
-
+![Sign in](https://github.com/Its-alida/gdsc_2024/blob/main/output_images/sign_in_blank.jpg)
+![google sign in](https://github.com/Its-alida/gdsc_2024/blob/main/output_images/sign_in_google_auth.jpg)
+![period tracker screen](https://github.com/Its-alida/gdsc_2024/blob/main/output_images/period_tracker_screen.jpg)
+![calendar](https://github.com/Its-alida/gdsc_2024/blob/main/output_images/calendar_to_make_logs.jpg)
+![results](https://github.com/Its-alida/gdsc_2024/blob/main/output_images/prediction_basic.jpg)
 
 
 ## Video Demonstration

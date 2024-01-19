@@ -1,4 +1,4 @@
-// Import necessary packages
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,16 +8,14 @@ import 'package:sign_in_button/sign_in_button.dart';
 
 import 'welcome_page.dart';
 
-// Define the SignInFive widget
-class SignInFive extends StatefulWidget {
-  const SignInFive({Key? key}) : super(key: key);
+class SignIn extends StatefulWidget {
+  const SignIn({Key? key}) : super(key: key);
 
   @override
-  State<SignInFive> createState() => _SignInFiveState();
+  State<SignIn> createState() => _SignInState();
 }
 
-// Define the state for SignInFive
-class _SignInFiveState extends State<SignInFive> {
+class _SignInState extends State<SignIn> {
   final FirebaseAuth _auth = FirebaseAuth.instance; 
   User? _user;
 
@@ -34,7 +32,7 @@ class _SignInFiveState extends State<SignInFive> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passController = TextEditingController();
 
-  // Function to register user with email and password
+
   Future<void> registerWithEmailAndPassword() async {
     // try {
     //   UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
@@ -62,7 +60,6 @@ class _SignInFiveState extends State<SignInFive> {
           height: size.height,
           child: Stack(
             children: <Widget>[
-              // Background designs using SVG images
               // Left side background design
               Positioned(
                 left: -34,
@@ -81,14 +78,13 @@ class _SignInFiveState extends State<SignInFive> {
                 top: 45.0,
                 child: SvgPicture.string(
                   // SVG path for right side background
-                   // Group 3177
+                 
                   '<svg viewBox="288.0 45.0 139.0 139.0" ><path transform="translate(288.0, 45.0)" d="M 104.25 0 L 139 69.5 L 104.25 139 L 34.74999618530273 139 L 0 69.5 L 34.75000762939453 0 Z" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(298.42, 80.45)" d="M 0 0 L 59.07500076293945 23.63000106811523 L 118.1500015258789 0" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25" stroke-miterlimit="4" stroke-linecap="butt" /><path transform="translate(357.5, 104.07)" d="M 0 79.22999572753906 L 0 0" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25" stroke-miterlimit="4" stroke-linecap="butt" /></svg>',
                   width: 139.0,
                   height: 139.0,
                 ),
               ),
 
-              // Content UI
               Positioned(
                 top: 8.0,
                 child: SizedBox(
@@ -157,7 +153,7 @@ class _SignInFiveState extends State<SignInFive> {
                           ),
                         ),
 
-                        // Footer section with Google, Facebook buttons, and sign up text
+                        // Footer section with Google sign up text
                         Expanded(
                           flex: 4,
                           child: Column(
@@ -183,7 +179,6 @@ class _SignInFiveState extends State<SignInFive> {
     );
   }
 
-  // Widget for displaying the logo
   Widget logo(double height_, double width_) {
     return Image.asset(
       'assets/splash_image.png',
@@ -192,7 +187,6 @@ class _SignInFiveState extends State<SignInFive> {
     );
   }
 
-  // Widget for displaying rich text
   Widget richText(double fontSize) {
     return Text.rich(
       TextSpan(
@@ -272,7 +266,6 @@ class _SignInFiveState extends State<SignInFive> {
     );
   }
 
-// Widget for password TextField
   Widget passwordTextField(Size size) {
     return Container(
       alignment: Alignment.center,
@@ -432,7 +425,7 @@ class _SignInFiveState extends State<SignInFive> {
   }
 
 
-  // Widget for Google and Facebook sign in buttons
+  // Widget for Google 
   Widget _googleSignInButton() {
     return Center(
       child:SizedBox(
@@ -564,7 +557,6 @@ void _handleGoogleSignIn() async {
       // Successfully signed in with Google
       print('Signed in with Google: ${user.displayName} (${user.email})');
       
-      // Navigate to the WelcomePage with the user's email
       Navigator.push(
         context,
         MaterialPageRoute(

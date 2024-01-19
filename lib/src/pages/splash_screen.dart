@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'sign_in_5.dart';
+import 'sign_in.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
       () => Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => const SignInFive(),
+          builder: (context) => const SignIn(),
         ),
       ),
     );
@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Widget logo() {
-    // Use Image.asset instead of SvgPicture.asset
+   
     return Image.asset(
       'assets/splash_image.png',
       // height: height_,
@@ -89,7 +89,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Text(
           'By Team Aarohi',
           style: GoogleFonts.inter(
-            fontSize: fontSize - 10, // Adjust the size as needed
+            fontSize: fontSize - 10, 
             color: const Color.fromARGB(255, 78, 76, 77),
             fontWeight: FontWeight.w200,
           ),

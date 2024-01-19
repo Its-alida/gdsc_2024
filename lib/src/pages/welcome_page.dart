@@ -29,7 +29,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                     ),
                   )
-                : Placeholder(), // Placeholder for when photoURL is not available
+                : Placeholder(), // Placeholder for gmail ids where there is no profile picture ( photoURL is None)
 
             const SizedBox(height: 20),
 
@@ -39,7 +39,7 @@ class WelcomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
-                fontWeight: FontWeight.bold, // You can adjust the fontWeight as needed
+                fontWeight: FontWeight.bold, 
               ),
             ),
             
@@ -47,7 +47,7 @@ class WelcomePage extends StatelessWidget {
 
             Text(
               userEmail,
-              textAlign: TextAlign.center, // Center the text
+              textAlign: TextAlign.center, 
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
@@ -70,7 +70,7 @@ class WelcomePage extends StatelessWidget {
               onPressed: () async {
                 try {
                   await FirebaseAuth.instance.signOut();
-                  Navigator.pop(context); // Navigate back to the sign-in page
+                  Navigator.pop(context); //to navigate back to the sign-in page
                 } catch (e) {
                   print('Error signing out: $e');
                 }

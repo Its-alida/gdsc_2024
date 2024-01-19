@@ -38,5 +38,10 @@ Explore how to use the app effectively, navigate through its interface, and leve
 
 Vigora Connect relies on specific dependencies and frameworks. Find a list of these dependencies along with version information in this section.
 
+## Screenshots
+
+![GitHub Logo](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/SPLASH_screen.png)
+
+
 ## Video Demonstration
 [Watch the Demo Video](https://youtu.be/87QlRsBqk9A)

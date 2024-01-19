@@ -40,7 +40,14 @@ Vigora Connect relies on specific dependencies and frameworks. Find a list of th
 
 ## Screenshots
 
-![GitHub Logo](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/SPLASH_screen.png)
+
+![Splash Screen](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/SPLASH_screen.png)
+![Sign in](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/sign_in_page.jpg)
+![google sign in](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/google_authentication_sign_in.jpg)
+![period tracker screen](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/period_tracker_page.jpeg)
+![calendar](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/calendar_for_period_log.jpeg)
+![results](https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/next_period_results.jpeg)
+
 
 
 ## Video Demonstration

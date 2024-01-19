@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Widget logo() {
-    // Use Image.asset instead of SvgPicture.asset
+   
     return Image.asset(
       'assets/splash_image.png',
       // height: height_,
@@ -89,7 +89,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Text(
           'By Team Aarohi',
           style: GoogleFonts.inter(
-            fontSize: fontSize - 10, // Adjust the size as needed
+            fontSize: fontSize - 10, 
             color: const Color.fromARGB(255, 78, 76, 77),
             fontWeight: FontWeight.w200,
           ),

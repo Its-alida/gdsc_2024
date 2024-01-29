@@ -40,8 +40,8 @@ Vigora Connect relies on specific dependencies and frameworks. Find a list of th
 
 ## Screenshots
 
-<img src="https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/SPLASH_screen.png" width="200" alt="Splash Screen"><img src="https://github.com/Its-alida/gdsc_2024/blob/main/output_images/sign_in_blank.jpg" width="200" alt="Sign in">
-
+<img src="https://github.com/Its-alida/gdsc_2024/blob/main/screenshots/SPLASH_screen.png" width="200" alt="Splash Screen">
+<img src="https://github.com/Its-alida/gdsc_2024/blob/main/output_images/sign_in_blank.jpg" width="200" alt="Sign in">
 <img src="https://github.com/Its-alida/gdsc_2024/blob/main/output_images/sign_in_google_auth.jpg" width="200" alt="Google Sign In">
 <img src="https://github.com/Its-alida/gdsc_2024/blob/main/output_images/flutter_02.png" width="200" alt="Period Tracker Screen">
 <img src="https://github.com/Its-alida/gdsc_2024/blob/main/output_images/calendar_to_make_logs.jpg" width="200" alt="Calendar">

@@ -1,4 +1,4 @@
-// TODO Implement this library.// period_tracking_screen.dart
+
 import 'package:flutter/material.dart';
 
 class PeriodTrackingScreen extends StatefulWidget {
@@ -98,7 +98,7 @@ class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
                 icon: Icon(
                   Icons.favorite,
                   color: Colors.pink,
-                ),  // Replace 'new_icon' with the icon you want to add
+                ),  
                 label: '',
     ),
         ],
@@ -120,9 +120,6 @@ class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
   }
 
   void _showPrediction() {
-    // Add logic to calculate and display the prediction based on the input values
-    // You can use the selectedDate, average period length, and average cycle length for calculations
-    // Display the result using a dialog or another UI element
     showDialog(
       context: context,
       builder: (BuildContext context) {

@@ -1,4 +1,4 @@
-
+// TODO Implement this library.// period_tracking_screen.dart
 import 'package:flutter/material.dart';
 
 class PeriodTrackingScreen extends StatefulWidget {
@@ -10,7 +10,7 @@ class PeriodTrackingScreen extends StatefulWidget {
 
 class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
   late DateTime selectedDate;
-
+  int currentPageIndex = 0;
   @override
   void initState() {
     super.initState();
@@ -62,8 +62,46 @@ class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
               onPressed: () => _showPrediction(),
               child: const Text('Show Prediction'),
             ),
-          ],
+          ]
         ),
+      ),
+     bottomNavigationBar: NavigationBar(
+        
+        onDestinationSelected: (int index){
+          setState(() {
+            currentPageIndex = index;
+          });
+        },
+        indicatorColor: Color.fromARGB(255, 255, 255, 255),
+        selectedIndex: currentPageIndex,
+        destinations: const <Widget>[
+          NavigationDestination(
+            // selectedIcon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home_filled,
+              color: Colors.pink
+              ), 
+            label: '',
+            ),
+            NavigationDestination(
+              icon: Badge(child : Icon(Icons.notification_add_sharp,color: Colors.pink)),
+              label: '',
+              ),
+              NavigationDestination(
+              icon: Badge(
+                label : Text('2'),
+                child: Icon(Icons.messenger_sharp,color: Colors.pink),
+              ),
+              label: '',
+              ),
+              NavigationDestination(
+                icon: Icon(
+                  Icons.favorite,
+                  color: Colors.pink,
+                ),  // Replace 'new_icon' with the icon you want to add
+                label: '',
+    ),
+        ],
       ),
     );
   }
@@ -82,7 +120,9 @@ class _PeriodTrackingScreenState extends State<PeriodTrackingScreen> {
   }
 
   void _showPrediction() {
-    // logic to calculate and display the prediction based on the input values
+    // Add logic to calculate and display the prediction based on the input values
+    // You can use the selectedDate, average period length, and average cycle length for calculations
+    // Display the result using a dialog or another UI element
     showDialog(
       context: context,
       builder: (BuildContext context) {
